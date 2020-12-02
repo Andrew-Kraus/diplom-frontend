@@ -1,0 +1,15 @@
+.articles__theme {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 88px;
+  height: 40px;
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+  background: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}

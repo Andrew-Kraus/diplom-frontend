@@ -1,0 +1,9 @@
+.results__image {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .results__image {
+    height: 150px;
+  }
+}

@@ -14,25 +14,25 @@ output: {
 },
 
 module: {
-    rules: [{ 
+    rules: [{
         test: /\.js$/,
-        use: { loader: "babel-loader" }, 
+        use: { loader: "babel-loader" },
         exclude: /node_modules/
             },
             {
-                test: /\.css$/i, 
+                test: /\.css$/i,
                 use: [(isDev ? "style-loader" : MiniCssExtractPlugin.loader), {
                     loader: 'css-loader',
                     options: {
                         importLoaders: 2
-                    } 
-                }, 'postcss-loader'], 
+                    }
+                }, 'postcss-loader'],
             },
 
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-           
+
                 {
                     loader: 'file-loader',
                     options: {
@@ -47,11 +47,11 @@ module: {
             test: /\.(woff|woff2|eot|ttf|otf)$/,
             use: ['file-loader', 'file-loader?name=fonts/[name].[ext]']
         }
-         
+
         ]
     },
 
-    
+
 
 plugins: [
     new MiniCssExtractPlugin(),
@@ -63,7 +63,7 @@ plugins: [
         },
         canPrint: true
 }),
-    new HtmlWebpackPlugin({ 
+    new HtmlWebpackPlugin({
         template: './src/index.html',
         filename: 'index.html'
     }),

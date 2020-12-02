@@ -1,0 +1,29 @@
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+
+@media screen and (max-width: 550px) {
+  .footer__icon {
+    padding-bottom: 90px;
+  }
+}
+
+.footer__icon-margin {
+  margin-left: 27px;
+  margin-right: 106px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer__icon-margin {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer__icon-margin {
+    margin-right: 0;
+  }
+}

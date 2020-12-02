@@ -1,0 +1,20 @@
+.results__card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  transition: 0.3s linear;
+  background-color: white;
+}
+
+
+
+.results__card:hover {
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+}
+
+
+.results__card-margin {
+  margin-right: 16px;
+  margin-left: 16px;
+}

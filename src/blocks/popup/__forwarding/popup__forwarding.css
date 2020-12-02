@@ -1,0 +1,12 @@
+.popup__forwarding {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.popup__forwarding-span {
+  color: #2F71E5;
+}

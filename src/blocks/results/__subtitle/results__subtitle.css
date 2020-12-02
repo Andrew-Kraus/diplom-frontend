@@ -1,0 +1,13 @@
+.results__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .results__subtitle {
+    margin-top: 0;
+  }
+}

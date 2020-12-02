@@ -1,0 +1,10 @@
+.footer__icon-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 550px) {
+  .footer__icon-container {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,23 @@
+.footer__copyright {
+  opacity: 0.3;
+  margin-left: 104px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__copyright {
+    margin-left: 40px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer__copyright {
+    order: 1;
+    margin-left: 0;
+  }
+}
