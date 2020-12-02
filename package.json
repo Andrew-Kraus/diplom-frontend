@@ -8,6 +8,10 @@
     "dev": "cross-env NODE_ENV=production webpack-dev-server --mode development --watch --open",
     "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrew-Kraus/diplom-frontend.git"
+  },
   "author": "Andrew Kraus",
   "license": "ISC",
   "devDependencies": {
@@ -26,6 +30,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.3.0",
     "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^1.3.0",
