@@ -45,7 +45,7 @@ module: {
          },
          {
             test: /\.(woff|woff2|eot|ttf|otf)$/,
-            use: ['file-loader', 'file-loader?name=fonts/[name].[ext]']
+            use: ['file-loader?name=fonts/[name].[ext]']
         }
 
         ]

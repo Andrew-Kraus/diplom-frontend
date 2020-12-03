@@ -5,6 +5,14 @@
   src: url("./fonts/inter-regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("./fonts/roboto-regular.woff") format("woff");
+}
+
+
 
 @font-face {
   font-family: 'Roboto';
