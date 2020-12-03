@@ -7,9 +7,6 @@
         <meta name="author" content="Andrew Kraus">
         <meta name="description" content="Поиск статей">
         <title>News</title>
-        <link rel="stylesheet" href="./index.css">
-        <link rel="stylesheet" href="../vendor/fonts.css">
-        <link rel="stylesheet" href="../vendor/normalize.css">
         <link rel="icon" href="../images/favicon.png">
       </head>
 <body class="page">
@@ -757,8 +754,7 @@
     <div class="popup__container popup__container-auth">
       <img class="popup__close popup__close-entry" src="<%=require('../images/1243215.png')%>">
       <h3 class="popup__title">Вход</h3>
-      <form class="popup__form" name="popup-reg" id="popup-reg">
-        <form class="popup__form" name="popup-reg" id="popup-reg">
+      <form class="popup__form" name="popup-entry" id="popup-entry">
           <h3 class="popup__text">Email</h3>
           <input type="text" class="popup__input popup__email" name="email" placeholder="Введите email" pattern="[a-y1-9-_]+@[a-y1-9-]+\.(([a-z]+\.){1,})?[a-y1-9]{2,}">
           <span class="popup__error">Неправильный формат email</span>
@@ -789,5 +785,4 @@
   <!--Конец попапа успешной регистрации-->
 
 </body>
-<script src="index.js"></script>
 </html>

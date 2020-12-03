@@ -1,3 +1,5 @@
+@import url(../vendor/fonts.css);
+@import url(../vendor/normalize.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/finder/finder.css);
 @import url(./blocks/author/author.css);
@@ -9,7 +11,5 @@
 @import url(./blocks/popup/popup.css);
 @import url(./blocks/colors/black.css);
 @import url(./blocks/page/page.css);
-
-
 
 
