@@ -13,3 +13,23 @@
 @import url(./blocks/page/page.css);
 
 
+.header__no-auth-page {
+  display: none;
+}
+
+.header__auth-page {
+
+}
+
+
+.results {
+  display: none;
+}
+
+.preloader {
+  display: none;
+}
+
+.not-found {
+  display: none;
+}
