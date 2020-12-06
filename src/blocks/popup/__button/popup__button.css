@@ -14,6 +14,11 @@
   font-size: 18px;
   line-height: 24px;
   outline: none;
+  transition: 0.3s linear;
+}
+
+.popup__button:hover {
+  background: #347EFF;
 }
 
 .popup__button-disable {

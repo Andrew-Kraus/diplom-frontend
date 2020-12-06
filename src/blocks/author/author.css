@@ -17,6 +17,12 @@
   }
 }
 
+@media screen and (max-width: 680px) {
+  .author {
+    height: 500px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .author {
     height: 650px;

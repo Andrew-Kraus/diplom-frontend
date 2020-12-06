@@ -1,5 +1,5 @@
 .results__image {
-  object-fit: cover;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
