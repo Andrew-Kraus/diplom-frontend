@@ -5,6 +5,7 @@
   border-radius: 10px;
   transition: 0.3s linear;
   background-color: white;
+  overflow: hidden;
 }
 
 

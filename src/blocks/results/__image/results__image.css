@@ -1,5 +1,20 @@
-.results__image {
-  border-radius: 10px;
+
+@media screen and (max-width: 1235px) {
+  .results__image {
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .results__image {
+    height: 210px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .results__image {
+    height: 170px;
+  }
 }
 
 @media screen and (max-width: 768px) {

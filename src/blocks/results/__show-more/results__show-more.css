@@ -10,4 +10,10 @@
   width: 288px;
   height: 64px;
   border: 0;
+  outline: none;
+  transition: 0.3 linear;
+}
+
+.results__show-more:hover {
+  opacity: 0.9;
 }
