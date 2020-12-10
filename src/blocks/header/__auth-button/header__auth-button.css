@@ -1,0 +1,20 @@
+.header__auth-button {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  width: 176px;
+  height: 48px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 6%;
+  outline: none;
+  cursor: pointer;
+}
+
+.header__auth-button-mobile {
+  align-self: center;
+  width: 288px;
+}

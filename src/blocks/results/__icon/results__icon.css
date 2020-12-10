@@ -1,0 +1,11 @@
+.results__icon {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  opacity: 0.4;
+  transition: 0.3s linear;
+}
+
+.results__icon:hover {
+  opacity: 1;
+}

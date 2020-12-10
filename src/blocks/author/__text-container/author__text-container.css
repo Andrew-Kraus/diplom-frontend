@@ -1,0 +1,31 @@
+
+.author__text-container {
+  margin-top: 51px;
+  margin-right: 216px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 56px;
+}
+
+@media screen and (max-width: 860px) {
+  .author__text-container {
+    margin-right: 50px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .author__text-container {
+    margin-right: 40px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .author__text-container {
+    width: 288px;
+    margin: auto;
+  }
+}

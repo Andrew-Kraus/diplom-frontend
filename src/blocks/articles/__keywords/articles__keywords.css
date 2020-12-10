@@ -1,0 +1,11 @@
+
+.articles__keywords {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.articles__keywords-span {
+  font-weight: bold;
+}

@@ -1,0 +1,17 @@
+
+.articles__text {
+  margin-left: 104px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .articles__text {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .articles__text {
+    margin-left: 16px;
+  }
+}

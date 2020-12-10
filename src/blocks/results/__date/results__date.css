@@ -1,0 +1,5 @@
+@media screen and (max-width: 768px) {
+  .results__date {
+    margin-bottom: 5px;
+  }
+}

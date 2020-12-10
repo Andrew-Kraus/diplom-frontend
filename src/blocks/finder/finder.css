@@ -1,0 +1,29 @@
+@import url(./__container/finder__container.css);
+@import url(./__search/finder__search.css);
+@import url(./__text/finder__text.css);
+@import url(./__description/finder__description.css);
+@import url(./__button/finder__button.css);
+@import url(./__image/finder__image.css);
+
+.finder {
+  height: 410px;
+}
+
+@media screen and (max-width: 768px) {
+  .finder {
+    height: 280px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .finder {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .finder {
+    height: 536px;
+  }
+}

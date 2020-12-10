@@ -1,0 +1,18 @@
+.page {
+  margin: 0 auto;
+  max-width: 1440px;
+  font-family: 'Inter', 'Roboto', 'Roboto Slab', 'SourceSansPro';
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Roboto Slab';
+}
+
+h2 {
+  font-family: 'Roboto Slab';
+}
+
+h3 {
+  font-family: 'Roboto Slab';
+}

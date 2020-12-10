@@ -1,0 +1,34 @@
+@import url(./__container/results__container.css);
+@import url(./__grid/results__grid.css);
+@import url(./__card/results__card.css);
+@import url(./__title/results__title.css);
+@import url(./__subtitle/results__subtitle.css);
+@import url(./__show-more/results__show-more.css);
+@import url(./__icon/results__icon.css);
+@import url(./__auth/results__auth.css);
+@import url(./__image/results__image.css);
+@import url(./__text/results__text.css);
+@import url(./__text/results__text.css);
+
+.results {
+  height: 974px;
+  background: #F5F6F7;
+}
+
+@media screen and (max-width: 768px) {
+  .results {
+    height: 850px;
+  }
+}
+
+@media screen and (max-width: 708px) {
+  .results {
+    height: 1300px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .results {
+    height: 1700px;
+  }
+}

@@ -1,0 +1,27 @@
+.finder__text {
+  text-align: left;
+  z-index: 1;
+}
+
+.finder__text-heading {
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 64px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1124px) {
+  .finder__text-heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .finder__text-heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}

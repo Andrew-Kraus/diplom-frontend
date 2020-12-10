@@ -1,0 +1,19 @@
+.results__show-more {
+  align-self: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 80px;
+  background: #FFFFFF;
+  border-radius: 80px;
+  width: 288px;
+  height: 64px;
+  border: 0;
+  outline: none;
+  transition: 0.3 linear;
+}
+
+.results__show-more:hover {
+  opacity: 0.9;
+}

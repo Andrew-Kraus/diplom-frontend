@@ -1,0 +1,31 @@
+.header__main {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: white;
+  margin-right: 34px;
+  text-decoration: none;
+  padding-top: 10%;
+}
+
+.header__main-saved {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: white;
+  margin-right: 34px;
+  text-decoration: none;
+  padding-top: 7%;
+}
+
+.header__main-underline {
+  border-bottom: 3px white solid;
+}
+
+.header__main-saved-underline {
+  border-bottom: 3px white solid;
+}
+
+.header__main-margin-mobile {
+  margin-left: 16px;
+}
