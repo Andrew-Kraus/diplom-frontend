@@ -7,5 +7,7 @@
 
 .results__container-text {
   width: 90%;
+  color: black;
   margin: 0 auto;
+  text-decoration: none;
 }

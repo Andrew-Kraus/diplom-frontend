@@ -11,24 +11,10 @@
 @import url(./__text/results__text.css);
 
 .results {
-  height: 974px;
   background: #F5F6F7;
+  display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .results {
-    height: 850px;
-  }
-}
-
-@media screen and (max-width: 708px) {
-  .results {
-    height: 1300px;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .results {
-    height: 1700px;
-  }
+.results-is-opened {
+  display: block;
 }

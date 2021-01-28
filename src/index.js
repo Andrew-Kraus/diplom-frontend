@@ -1,70 +1,144 @@
 import './index.css';
-// Кнопки
-const headerAuthButton = document.querySelector('.header__auth-button');
-const popupButtonReg = document.querySelector('.popup__button');
-const popupButtonEntry = document.querySelector('.popup__button-entry');
+import FormValidator from './FormValidator';
+import Api from './Api';
+import Popup from './Popup';
+import Header from './Header';
+import NewsApi from './NewsApi';
+import SearchNews from './SearchNews';
+import NewsArray from './NewsArray';
+import ArticlePattern from './ArticlePattern';
+import {
+  count,
+  cards,
+  cardsArray,
+  userName,
+  showMoreButton,
+  headerA,
+  headerR,
+  userHeader,
+  headerAuthButton,
+  popupButtonReg,
+  popupButtonEntry,
+  popupErrorReg,
+  popupErrorEnt,
+  popupR,
+  popupE,
+  popupS,
+  popupForwardEntry,
+  popupForwardReg,
+  popupForwardSuccess,
+  closePopupReg,
+  closePopupEntry,
+  closePopupSuccess,
+  inputEmail,
+  inputPass,
+  inputName,
+  API_NEWS,
+  API_URL,
+  formReg,
+  formEnt,
+  inputEmailEnt,
+  inputPassEnt,
+  finderButton,
+} from './const/const';
 
-// Попапы + переход
-const popupReg = document.querySelector('.popup-reg');
-const popupEntry = document.querySelector('.popup-entry');
-const popupSuccess = document.querySelector('.popup-success');
-const popupForwardReg = document.querySelector('.popup__forwarding');
-const popupForwardEntry = document.querySelector('.popup__forwarding-entry');
-const popupForwardSuccess = document.querySelector('.popup__come-in');
+const popupReg = new Popup(popupR);
+const popupEnt = new Popup(popupE);
+const popupSuccess = new Popup(popupS);
+const popupRegValidator = new FormValidator(formReg, popupButtonReg);
+const popupEntValidator = new FormValidator(formEnt, popupButtonEntry);
+const api = new Api(API_URL);
+const headerReg = new Header(headerR, api, userHeader);
+const headerAuth = new Header(headerA, api, userHeader);
+const newsApi = new NewsApi(API_NEWS);
+const article = new ArticlePattern(api, cardsArray);
+const cardList = new NewsArray(cards, cardsArray, count, article, api, userName);
+const searchNews = new SearchNews(newsApi, cardList);
 
-// Закрытие попапов
-const closePopupReg = document.querySelector('.popup__close');
-const closePopupEntry = document.querySelector('.popup__close-entry');
-const closePopupSuccess = document.querySelector('.popup__close-success');
+cards.addEventListener('click', article.articleHandler);
+finderButton.addEventListener('click', searchNews.getNews);
 
-// Фукнции
-
-function openPopup(popup) {
-  popup.classList.add('popup-is-opened');
-}
-
-function closePopup(popup) {
-  popup.classList.remove('popup-is-opened');
-}
-
-// Обработчики
+showMoreButton.addEventListener('click', () => {
+  cardList.showMoreButton(showMoreButton);
+});
 
 headerAuthButton.addEventListener('click', () => {
-  openPopup(popupReg);
+  popupReg.open();
+  popupRegValidator.checkInputValid();
+  popupRegValidator.setEventListeners();
 });
 
 closePopupReg.addEventListener('click', () => {
-  closePopup(popupReg);
+  popupReg.close();
+  formReg.reset();
 });
 
 popupForwardReg.addEventListener('click', () => {
-  openPopup(popupEntry);
-  closePopup(popupReg);
+  popupReg.close();
+  formReg.reset();
+  popupEnt.open();
+  popupEntValidator.checkInputValid();
+  popupEntValidator.setEventListeners();
 });
 
 popupForwardEntry.addEventListener('click', () => {
-  closePopup(popupEntry);
-  openPopup(popupReg);
+  popupEnt.close();
+  popupReg.open();
+  formEnt.reset();
 });
 
 closePopupEntry.addEventListener('click', () => {
-  closePopup(popupEntry);
+  popupEnt.close();
+  formEnt.reset();
 });
 
 popupButtonReg.addEventListener('click', () => {
-  closePopup(popupReg);
-  openPopup(popupSuccess);
+  api.createUser(inputName.value, inputEmail.value, inputPass.value)
+    .then(() => {
+      popupSuccess.open();
+      popupReg.close();
+    })
+    .catch(() => {
+      popupErrorReg.style.display = 'block';
+      popupRegValidator.setButtonDisable();
+    });
 });
-
 popupForwardSuccess.addEventListener('click', () => {
-  closePopup(popupSuccess);
-  openPopup(popupEntry);
+  popupSuccess.close();
+  popupEnt.open();
 });
 
 closePopupSuccess.addEventListener('click', () => {
-  closePopup(popupSuccess);
+  popupSuccess.close();
 });
 
 popupButtonEntry.addEventListener('click', () => {
-  closePopup(popupEntry);
+  api.authorization(inputEmailEnt.value, inputPassEnt.value)
+    .then((data) => {
+      localStorage.setItem('token', data.token);
+      popupEnt.close();
+      headerReg.close();
+      headerAuth.open();
+    })
+    .catch(() => {
+      popupErrorEnt.style.display = 'block';
+      popupEntValidator.setButtonDisable();
+    });
 });
+
+userName.addEventListener('click', () => {
+  localStorage.removeItem('token');
+  headerAuth.close();
+  headerReg.openHeader();
+});
+
+api.getUserData()
+  .then((res) => {
+    if (res.name != null) {
+      headerReg.close();
+      headerAuth.open();
+    } else {
+      headerAuth.close();
+      headerReg.openHeader();
+    }
+  });

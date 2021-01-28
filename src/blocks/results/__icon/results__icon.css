@@ -4,8 +4,24 @@
   top: 24px;
   opacity: 0.4;
   transition: 0.3s linear;
+  background-image: url('/images/52.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+
+.results__icon-save {
+  background-image: url('/images/iconSave.svg');
 }
 
 .results__icon:hover {
   opacity: 1;
+}
+
+.results__icon:hover .results__auth-closed {
+  display: block;
 }
