@@ -56,7 +56,7 @@ export const closePopupSuccess = document.querySelector('.popup__close-success')
 export const inputEmail = document.querySelector('.popup__email');
 export const inputPass = document.querySelector('.popup__password');
 export const inputName = document.querySelector('.popup__name');
-export const API_URL = NODE_ENV === 'production' ? 'https://diplombackend.students.nomoreparties.co' : 'http://diplombackend.students.nomoreparties.co';
+export const API_URL = NODE_ENV === 'production' ? 'https://cors-anywhere.herokuapp.com/https://diplombackend.students.nomoreparties.co' : 'https://cors-anywhere.herokuapp.com/http://diplombackend.students.nomoreparties.co';
 export const API_NEWS = NODE_ENV === 'production' ? 'https://newsapi.org/v2/' : 'https://nomoreparties.co/news/v2/';
 export const formReg = document.forms.popupReg;
 export const formEnt = document.forms.popupEntry;
