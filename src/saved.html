@@ -11,14 +11,14 @@
       </head>
 
 <body class="page">
-<header class="header">
+<header class="header header-is-opened">
   <div class="header__container header__container-black">
       <h3 class="header__news black">News Explorer</h3>
       <img class="header__menu" src="<%=require('../images/413245325.png')%>" alt="Здесь должно было быть изображение">
     <div class="header__auth-container">
       <a href="index.html" class="header__main-saved black header__main-saved-underline">Главная</a>
       <a href="saved.html" class="header__main-saved black header__main-saved-underline">Сохранённые статьи</a>
-      <button class="header__profile-button header__profile-button-black">Грета [→</button>
+      <button class="header__profile-button header__profile-button-black"></button>
     </div>
   </div>
 </header>
@@ -37,77 +37,10 @@
 
 <section class="articles">
 <div class="articles__text">
-  <h4 class="articles__title">Сохранённые статьи</h4>
-  <h2 class="articles__subtitle">Грета, у вас 5 сохранённых статей</h2>
-  <p class="articles__keywords">По ключевым словам: <span class="articles__keywords-span">Природа, Тайга</span> и <span class="articles__keywords-span">2-м другим</span></p>
+
 </div>
 <div class="articles__grid">
-  <div class="results__card">
-    <img class="results__image" src="<%=require('../images/image_06.png')%>" alt="Здесь должно было быть изображение">
-    <img class="results__icon" src="<%=require('../images/412.png')%>" alt="Здесь должно было быть изображение">
-    <div class="articles__delete"><p>Убрать из сохранённых</p></div>
-    <div class="articles__theme"><p>Природа</p></div>
-    <div class="results__container-text">
-      <p class="results__date gray-text">2 августа, 2019</p>
-      <h3 class="results__subtitle">Национальное достояние – парки</h3>
-      <p class="results__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-      <p class="results__source gray-text">ДЗЕН</p>
-    </div>
-  </div>
 
-  <div class="results__card">
-    <img class="results__image" src="<%=require('../images/image_01.png')%>" alt="Здесь должно было быть изображение">
-    <img class="results__icon" src="<%=require('../images/412.png')%>" alt="Здесь должно было быть изображение">
-    <div class="articles__delete"><p>Убрать из сохранённых</p></div>
-    <div class="articles__theme"><p>Природа</p></div>
-    <div class="results__container-text">
-      <p class="results__date gray-text">2 августа, 2019</p>
-      <h3 class="results__subtitle">Лесные огоньки: история одной фотографии</h3>
-      <p class="results__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-      из местных чудес природы.</p>
-      <p class="results__source gray-text">АФИША</p>
-  </div>
-  </div>
-
-  <div class="results__card">
-    <img class="results__image" src="<%=require('../images/image_05.png')%>" alt="Здесь должно было быть изображение">
-    <img class="results__icon" src="<%=require('../images/412.png')%>" alt="Здесь должно было быть изображение">
-    <div class="articles__delete"><p>Убрать из сохранённых</p></div>
-    <div class="articles__theme"><p>Тайга</p></div>
-    <div class="results__container-text">
-      <p class="results__date gray-text">2 августа, 2019</p>
-      <h3 class="results__subtitle">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-      <p class="results__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-      <p class="results__source gray-text">МЕДИАЗОНА</p>
-    </div>
-  </div>
-
-  <div class="results__card">
-    <img class="results__image" src="<%=require('../images/image_06.png')%>" alt="Здесь должно было быть изображение">
-    <img class="results__icon" src="<%=require('../images/412.png')%>" alt="Здесь должно было быть изображение">
-    <div class="articles__delete"><p>Убрать из сохранённых</p></div>
-    <div class="articles__theme"><p>Парки</p></div>
-    <div class="results__container-text">
-      <p class="results__date gray-text">2 августа, 2019</p>
-      <h3 class="results__subtitle">Национальное достояние – парки</h3>
-      <p class="results__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-      <p class="results__source gray-text">ДЗЕН</p>
-    </div>
-  </div>
-
-  <div class="results__card">
-    <img class="results__image" src="<%=require('../images/image_01.png')%>" alt="Здесь должно было быть изображение">
-    <img class="results__icon" src="<%=require('../images/412.png')%>" alt="Здесь должно было быть изображение">
-    <div class="articles__delete"><p>Убрать из сохранённых</p></div>
-    <div class="articles__theme"><p>Фотографии</p></div>
-    <div class="results__container-text">
-      <p class="results__date gray-text">2 августа, 2019</p>
-      <h3 class="results__subtitle">Лесные огоньки: история одной фотографии</h3>
-      <p class="results__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-      из местных чудес природы.</p>
-      <p class="results__source gray-text">АФИША</p>
-    </div>
-  </div>
 </div>
 </section>
 

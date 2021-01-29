@@ -13,14 +13,13 @@
 @import url(./blocks/page/page.css);
 
 
-.header__no-auth-page {
+.header-is-opened {
+  display: flex;
+}
+
+.header-is-closed {
   display: none;
 }
-
-.header__auth-page {
-
-}
-
 
 .results {
 
